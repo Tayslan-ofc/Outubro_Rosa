@@ -1,0 +1,30 @@
+@import "./variables.scss";
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin align-and-justify($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin height-width($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin max-height-width($max-height, $max-width) {
+  max-height: $max-height;
+  max-width: $max-width;
+}
+
+@mixin text-default {
+  text-decoration: none;
+  font-weight: 600;
+  color: $black-color;
+  font-size: $font-size;
+}

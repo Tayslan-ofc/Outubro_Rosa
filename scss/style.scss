@@ -1,0 +1,175 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1em;
+}
+
+header {
+  @include align-and-justify(center, space-around);
+  width: 100%;
+  background: $pink-color;
+
+  .nav-logo {
+    @include height-width(100%, 50%);
+    @include flex-center;
+
+    figure {
+      img {
+        @include height-width(10vh, 100%);
+      }
+    }
+
+    a {
+      @include text-default;
+    }
+  }
+
+  .nav-menu {
+    @include flex-center;
+    width: 100%;
+
+    ul {
+      li {
+        display: inline;
+        list-style: none;
+      }
+    }
+
+    a {
+      @include text-default;
+      margin: 0 1vw;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  background: $body-color;
+
+  .sec-one {
+    @include align-and-justify(center, space-around);
+    @include height-width(60vh, 100%);
+    padding: 2vw;
+
+    .text-content {
+      @include max-height-width(40%, 40%);
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      p {
+        font-size: $font-size;
+      }
+    }
+  }
+
+  .sec-img-one {
+    img {
+      @include height-width(40vh, 100%);
+    }
+  }
+
+  .sec-two {
+    @include align-and-justify(center, space-around);
+    @include height-width(50vh, 100%);
+    padding: 1vw;
+    background: $pink-color;
+
+    .sec-img-two {
+      img {
+        @include height-width(40vh, 100%);
+      }
+    }
+
+    .text-content {
+      @include max-height-width(40%, 40%);
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      p {
+        font-size: $font-size;
+      }
+    }
+  }
+
+  .sec-three {
+    @include align-and-justify(center, space-around);
+    height: 100%;
+    padding: 2vw;
+    background: $body-color;
+
+    .img-container {
+      @include align-and-justify(center, space-evenly);
+      @include height-width(100%, 100%);
+      flex-wrap: wrap;
+      /* overflow: auto; */ /* Aqui optei por continuar sem o scroll, mantendo apenas a quebra dos itens em conjunto com a responsividade. */
+
+      img {
+        @include height-width(100%, 100%);
+        @include max-height-width(30vw, 30vh);
+        border-radius: 100%;
+        margin: 3vh 0;
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background: $pink-color;
+
+  .footer-menu {
+    @include align-and-justify(center, space-around);
+    width: 100%;
+    padding: 2vw;
+  }
+
+  .nav-footer {
+    width: 100%;
+    @include flex-center;
+
+    ul {
+      @include align-and-justify(center, space-evenly);
+      @include max-height-width(50%, 50%);
+      overflow: auto;
+      width: 100%;
+
+      li {
+        list-style: none;
+
+        .icon {
+          font-size: 2rem;
+          color: $black-color;
+        }
+      }
+    }
+  }
+
+  .sec-footer {
+    @include flex-center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .text-footer {
+      text-align: center;
+      font-size: $font-size;
+      white-space: pre-line;
+    }
+  }
+
+  .sec-img-footer {
+    @include flex-center;
+    width: 100%;
+
+    img {
+      @include height-width(10vh, 15%);
+      min-width: 7vw;
+    }
+  }
+}
