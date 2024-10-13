@@ -27,4 +27,15 @@
   font-weight: 600;
   color: $black-color;
   font-size: $font-size;
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin text-hover {
+  background: linear-gradient(
+    to right,
+    $text-t-h-color-start,
+    $text-t-h-color-end
+  );
+  background-clip: text;
+  color: transparent;
 }
