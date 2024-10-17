@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Ubuntu", cursive;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background: #ff69b4;
+}
+header .nav-logo {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav-logo .header-logo img {
+  height: 30%;
+  width: 100%;
+}
+header .nav-logo a {
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+header .nav-logo a:hover {
+  background: linear-gradient(to right, #d200c8, #8a0445);
+  background-clip: text;
+  color: transparent;
+}
+header .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+header .nav-menu ul {
+  text-align: center;
+}
+header .nav-menu ul li {
+  display: inline-block;
+  list-style: none;
+}
+header .nav-menu a {
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 1vw;
+}
+header .nav-menu a:hover {
+  background: linear-gradient(to right, #d200c8, #8a0445);
+  background-clip: text;
+  color: transparent;
+}

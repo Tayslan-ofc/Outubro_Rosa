@@ -1,0 +1,107 @@
+@charset "UTF-8";
+main {
+  width: 100%;
+  background: #ffd9ec;
+}
+main .sec-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  padding: 2vw;
+}
+main .sec-one ::-webkit-scrollbar {
+  height: 100%;
+  width: 1vw;
+}
+main .sec-one ::-webkit-scrollbar-track {
+  background-color: #ff69b4;
+  border-radius: 10vw;
+}
+main .sec-one ::-webkit-scrollbar-thumb {
+  background-color: rgba(133, 114, 85, 0.878);
+  border-radius: 10vw;
+}
+main .sec-one .text-content {
+  max-height: 30vh;
+  max-width: 40%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+main .sec-one .text-content p {
+  font-size: 1rem;
+}
+main .sec-img-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .sec-img-one img {
+  height: 50%;
+  width: 50%;
+}
+main .sec-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  padding: 1vw;
+  background: #ff69b4;
+}
+main .sec-two ::-webkit-scrollbar {
+  height: 100%;
+  width: 1vw;
+}
+main .sec-two ::-webkit-scrollbar-track {
+  background-color: #ffd9ec;
+  border-radius: 10vw;
+}
+main .sec-two ::-webkit-scrollbar-thumb {
+  background-color: rgba(133, 114, 85, 0.878);
+  border-radius: 10vw;
+}
+main .sec-two .sec-img-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .sec-two .sec-img-two img {
+  height: 40%;
+  width: 80%;
+}
+main .sec-two .text-content {
+  max-height: 30vh;
+  max-width: 40%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+main .sec-two .text-content p {
+  font-size: 1rem;
+}
+main .sec-three {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  padding: 2vw;
+  background: #ffd9ec;
+}
+main .sec-three .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  /* Caso minhas imagens estivessem em medidas de vh e vw, eu teria que utilizar uma dessas opções para melhor responsividade do site */
+  /* flex-wrap: wrap; */
+  /* overflow: auto; */
+}
+main .sec-three .img-container img {
+  height: 100%;
+  width: 100%;
+  max-height: 15%;
+  max-width: 15%;
+  border-radius: 100%;
+}

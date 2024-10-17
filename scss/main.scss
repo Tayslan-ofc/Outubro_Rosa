@@ -1,0 +1,75 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+main {
+    width: 100%;
+    background: $body-color;
+  
+    .sec-one {
+      @include align-and-justify(center, space-evenly);
+      @include height-width(100%, 100%);
+      @include scroll($scroll-color-one, $scroll-color-three);
+      padding: 2vw;
+  
+      .text-content {
+        @include max-height-width(30vh, 40%);
+        @include overflow-y-x(auto, hidden);
+    
+        p {
+          font-size: $font-size-text;
+        }
+      }
+    }
+  
+    .sec-img-one {
+      @include flex-center;
+      img {
+        @include height-width(50%, 50%);
+      }
+    }
+  
+    .sec-two {
+      @include align-and-justify(center, space-around);
+      @include height-width(100%, 100%);
+      @include scroll($scroll-color-two, $scroll-color-three);
+      padding: 1vw;
+      background: $pink-color;
+  
+      .sec-img-two {
+        @include flex-center;
+        img {
+          @include height-width(40%, 80%);
+        }
+      }
+  
+      .text-content {
+        @include max-height-width(30vh, 40%);
+        @include overflow-y-x(auto, hidden);
+  
+        p {
+          font-size: $font-size-text;
+        }
+      }
+    }
+  
+    .sec-three {
+      @include align-and-justify(center, space-around);
+      height: 100%;
+      padding: 2vw;
+      background: $body-color;
+  
+      .img-container {
+        @include align-and-justify(center, space-evenly);
+        @include height-width(100%, 100%);
+        /* Caso minhas imagens estivessem em medidas de vh e vw, eu teria que utilizar uma dessas opções para melhor responsividade do site */
+        /* flex-wrap: wrap; */
+        /* overflow: auto; */
+  
+        img {
+          @include height-width(100%, 100%);
+          @include max-height-width(15%, 15%);
+          border-radius: 100%;
+        }
+      }
+    }
+  }

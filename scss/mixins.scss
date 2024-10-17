@@ -24,10 +24,11 @@
 
 @mixin text-default {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   color: $black-color;
-  font-size: $font-size;
+  font-size: $font-size-text;
   transition: all 0.2s ease-in-out;
+  color: $white-color;
 }
 
 @mixin text-hover {
@@ -38,4 +39,25 @@
   );
   background-clip: text;
   color: transparent;
+}
+
+@mixin overflow-y-x($y, $x) {
+  overflow-y: $y;
+  overflow-x: $x;
+}
+
+@mixin scroll($track-color: $scroll-color-one, $thumb-color: $scroll-color-two) {
+  ::-webkit-scrollbar {
+    @include height-width(100%, 1vw);
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: $track-color;
+    border-radius: 10vw;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $thumb-color;
+    border-radius: 10vw;
+  }
 }
